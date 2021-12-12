@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Vite App</title>
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body class="bg-gray-500">
+    <div class="p-5">
+      <form id="form">
+        <input
+          class="border-2 border-black mb-2 p-2"
+          type="text"
+          placeholder="Title"
+          id="title"
+        />
+        <br />
+        <textarea
+          class="border-2 border-blue-400 mb-2 p-2"
+          placeholder="Description"
+          id="content"
+        ></textarea>
+        <br />
+        <input type="date" name="date" id="date">
+        <button class="bg-blue-400 p-1 text-white" type="submit">Submit</button>
+      </form>
+      <div id="blogs" class="mb-6 flex flex-col gap-4"></div>
+    </div>
+    
+  </body>
+</html>
