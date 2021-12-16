@@ -1,11 +1,12 @@
+import { HtmlTagDescriptor } from "vite"
 import "./style.css"
 import { supabase } from "./supabase"
 
 const blogsContainer = document.getElementById("blogs")
-const form = document.getElementById("form")
-const title = document.getElementById("title")
-const content = document.getElementById("content")
-const date = document.getElementById("date")
+const form = document.getElementById("form") as HTMLFormElement
+const title = document.getElementById("title") as HTMLInputElement
+const content = document.getElementById("content") as HTMLInputElement
+const date = document.getElementById("date") as HTMLInputElement
 
 const useData = async () => {
   const { data, error } = await supabase.from("blogs").select() // gets the data from supabase
